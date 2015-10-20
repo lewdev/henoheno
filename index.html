@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Henoheno Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="henoheno.js"></script>
+    <link href="henoheno.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="title">Henoheno Game</div>
+
+<div id="screen">
+  <div id="face">
+    <div id="left-brow" class="facePart" onclick="selectPart(this);">へ</div>
+    <div id="right-brow" class="facePart" onclick="selectPart(this);">へ</div>
+    <div id="left-eye" class="facePart" onclick="selectPart(this);">の</div>
+    <div id="right-eye" class="facePart" onclick="selectPart(this);">の</div>
+    <div id="nose" class="facePart" onclick="selectPart(this);">も</div>
+    <div id="mouth" class="facePart" onclick="selectPart(this);">へ</div>
+  </div>
+  <div id="clearLines" onclick="clearPartLines()">X</div>
+
+  <div id="controls">
+
+    <table id="hiraganaTable">
+    <tr>
+      <td align="center" valign="top">
+      <table>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">あ</a></td>
+      <td><a href="#" onclick="return draw(this);">い</a></td>
+      <td><a href="#" onclick="return draw(this);">う</a></td>
+      <td><a href="#" onclick="return draw(this);">え</a></td>
+      <td><a href="#" onclick="return draw(this);">お</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">か</a></td>
+      <td><a href="#" onclick="return draw(this);">き</a></td>
+      <td><a href="#" onclick="return draw(this);">く</a></td>
+      <td><a href="#" onclick="return draw(this);">け</a></td>
+      <td><a href="#" onclick="return draw(this);">こ</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">さ</a></td>
+      <td><a href="#" onclick="return draw(this);">し</a></td>
+      <td><a href="#" onclick="return draw(this);">す</a></td>
+      <td><a href="#" onclick="return draw(this);">せ</a></td>
+      <td><a href="#" onclick="return draw(this);">そ</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">た</a></td>
+      <td><a href="#" onclick="return draw(this);">ち</a></td>
+      <td><a href="#" onclick="return draw(this);">つ</a></td>
+      <td><a href="#" onclick="return draw(this);">て</a></td>
+      <td><a href="#" onclick="return draw(this);">と</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">な</a></td>
+      <td><a href="#" onclick="return draw(this);">に</a></td>
+      <td><a href="#" onclick="return draw(this);">ぬ</a></td>
+      <td><a href="#" onclick="return draw(this);">ね</a></td>
+      <td><a href="#" onclick="return draw(this);">の</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">は</a></td>
+      <td><a href="#" onclick="return draw(this);">ひ</a></td>
+      <td><a href="#" onclick="return draw(this);">ふ</a></td>
+      <td><a href="#" onclick="return draw(this);">へ</a></td>
+      <td><a href="#" onclick="return draw(this);">ほ</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">ま</a></td>
+      <td><a href="#" onclick="return draw(this);">み</a></td>
+      <td><a href="#" onclick="return draw(this);">む</a></td>
+      <td><a href="#" onclick="return draw(this);">め</a></td>
+      <td><a href="#" onclick="return draw(this);">も</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">や</a></td>
+      <td bgcolor="#DDDDF6"></td>
+      <td><a href="#" onclick="return draw(this);">ゆ</a></td>
+      <td bgcolor="#DDDDF6"></td>
+      <td><a href="#" onclick="return draw(this);">よ</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">ら</a></td>
+      <td><a href="#" onclick="return draw(this);">り</a></td>
+      <td><a href="#" onclick="return draw(this);">る</a></td>
+      <td><a href="#" onclick="return draw(this);">れ</a></td>
+      <td><a href="#" onclick="return draw(this);">ろ</a></td>
+      </tr>
+      <tr align="center">
+      <td><a href="#" onclick="return draw(this);">わ</a></td>
+      <td bgcolor="#DDDDF6"></td>
+      <td><a href="#" onclick="return draw(this);">ん</a></td>
+      <td bgcolor="#DDDDF6"></td>
+      <td><a href="#" onclick="return draw(this);">を</a></td>
+      </tr>
+      </table>
+      </td>
+
+      <td align="center" valign="top">
+      <table style="border:0">
+      <tr>
+      <td><a href="#" onclick="return draw(this);">が</a></td>
+      <td><a href="#" onclick="return draw(this);">ぎ</a></td>
+      <td><a href="#" onclick="return draw(this);">ぐ</a></td>
+      <td><a href="#" onclick="return draw(this);">げ</a></td>
+      <td><a href="#" onclick="return draw(this);">ご</a></td>
+      </tr>
+      <tr>
+      <td><a href="#" onclick="return draw(this);">ざ</a></td>
+      <td><a href="#" onclick="return draw(this);">じ</a></td>
+      <td><a href="#" onclick="return draw(this);">ず</a></td>
+      <td><a href="#" onclick="return draw(this);">ぜ</a></td>
+      <td><a href="#" onclick="return draw(this);">ぞ</a></td>
+      </tr>
+      <tr>
+      <td><a href="#" onclick="return draw(this);">だ</a></td>
+      <td><a href="#" onclick="return draw(this);">ぢ</a></td>
+      <td><a href="#" onclick="return draw(this);">づ</a></td>
+      <td><a href="#" onclick="return draw(this);">で</a></td>
+      <td><a href="#" onclick="return draw(this);">ど</a></td>
+      </tr>
+      <tr>
+      <td><a href="#" onclick="return draw(this);">ば</a></td>
+      <td><a href="#" onclick="return draw(this);">び</a></td>
+      <td><a href="#" onclick="return draw(this);">ぶ</a></td>
+      <td><a href="#" onclick="return draw(this);">べ</a></td>
+      <td><a href="#" onclick="return draw(this);">ぼ</a></td>
+      </tr>
+      <tr>
+      <td><a href="#" onclick="return draw(this);">ぱ</a></td>
+      <td><a href="#" onclick="return draw(this);">ぴ</a></td>
+      <td><a href="#" onclick="return draw(this);">ぷ</a></td>
+      <td><a href="#" onclick="return draw(this);">ぺ</a></td>
+      <td><a href="#" onclick="return draw(this);">ぽ</a></td>
+      </tr>
+      <tr>
+      <td colspan="2" bgcolor="#E9E9E9"></td>
+      <td><a href="#" onclick="return draw(this);">ゔ</a></td>
+      <td colspan="5" bgcolor="#E9E9E9"></td>
+      </tr>
+      </table>
+      </td>
+    </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

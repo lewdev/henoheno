@@ -1,0 +1,135 @@
+body, html, table, td, th {
+    font-family:Verdana, Sanserif;
+}
+
+h1,h2,h3,h4,h5 { padding:3px; margin:3px }
+h1 {font-size:2em}
+h2 {font-size:1.8em}
+h3 {font-size:1.6em}
+table, td, th { border-collapse:collapse; padding:2px; }
+table, td, th { border:1px solid gray; }
+th { background-color: #CCC; }
+
+#screen div {
+  padding:0;
+  margin:0;
+  text-align:center;
+  vertical-align:middle;
+  font-family:MS Mincho;
+}
+/*
+MS Gothic, MS PGothic
+MS Mincho, MS PMincho
+MS UI Gothic
+Meiryo
+Meiryo UI
+*/
+
+#title {
+  border:1px solid blue;
+  position:absolute;
+  top:10px;
+  left:30px;
+  width:340px;
+  height:19px;
+  padding:0px;
+  text-align:center;
+}
+
+.facePart {
+  cursor: hand; cursor: pointer;
+  border:1px solid transparent;
+}
+
+#screen {
+  border:1px solid blue;
+  position:absolute;
+  top:30px;
+  left:30px;
+  width:340px;
+  height:630px;
+  padding:0px;
+}
+#clearLines {
+  cursor: hand; cursor: pointer;
+  position:absolute;
+  top:20px;
+  left:305px;
+  width:20px;
+  height:20px;
+  font-size:20px;
+  font-family:Arial;
+}
+#face {
+  border:1px solid gray;
+  position:absolute;
+  top:20px;
+  left:20px;
+  width:300px;
+  height:300px;
+  font-size:700px;
+  background-color:#CCC;
+}
+#controls {
+  border:1px solid blue;
+  position:absolute;
+  top:330px;
+  left:20px;
+  width:300px;
+  height:280px;
+  font-size:18px;
+}
+#hiraganaTable {
+  width:300px;
+  border:0;
+}
+#hiraganaTable>td { padding:0; text-align:center; vertical-align:center;}
+#hiraganaTable table { width: 100%; }
+#left-eye {
+  position:absolute;
+  top:60px;
+  left:50px;
+  width:60px;
+  height:60px;
+  font-size:60px;
+}
+#right-eye {
+  position:absolute;
+  top:60px;
+  left:180px;
+  width:60px;
+  height:60px;
+  font-size:60px;
+}
+#left-brow {
+  position:absolute;
+  top:20px;
+  left:50px;
+  width:60px;
+  height:60px;
+  font-size:60px;
+}
+#right-brow {
+  position:absolute;
+  top:20px;
+  left:180px;
+  width:60px;
+  height:60px;
+  font-size:60px;
+}
+#nose {
+  position:absolute;
+  top:110px;
+  left:120px;
+  width:70px;
+  height:80px;
+  font-size:60px;
+}
+#mouth {
+  position:absolute;
+  top:190px;
+  left:30px;
+  width:250px;
+  height:70px;
+  font-size:60px;
+}
